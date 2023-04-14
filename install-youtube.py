@@ -12,7 +12,7 @@ file = input("would you like just the audio or the video too?\n>")
 
 if file == "video":
     stream = yt.streams.get_highest_resolution()
-    
+    print("[+] downloading:" + yt.title)
     stream.download()
     
     print("Video and audio downloaded successfully!")
